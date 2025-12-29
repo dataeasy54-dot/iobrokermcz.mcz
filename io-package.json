@@ -1,15 +1,20 @@
 {
-  "common": {
-    "name": "mcz",
-    "title": "MCZ Maestro",
-    "version": "0.1.0",
-    "platform": "Javascript/Node.js",
-    "mode": "daemon",
-    "type": "climate"
+  "name": "iobroker.mcz",
+  "version": "0.1.0",
+  "description": "MCZ Maestro ioBroker Adapter",
+  "author": "dataeasy54-dot",
+  "license": "MIT",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dataeasy54-dot/iobrokermcz.mcz"
   },
-  "native": {
-    "email": "",
-    "password": "",
-    "interval": 10
+  "scripts": {
+    "postinstall": "node node_modules/@iobroker/adapter-core/scripts/postinstall.js"
+  },
+  "dependencies": {
+    "@iobroker/adapter-core": "^3.1.0",
+    "axios": "^1.6.0",
+    "ws": "^8.15.0"
   }
 }
